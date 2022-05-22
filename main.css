@@ -1,0 +1,79 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color : #ff0000;
+  --grey-dark--color : #909090;
+  --grey-light-color : #e0e0e0;
+  /* size */
+  --side-padding:12px;
+  --avator-size:36px;
+  /* font size */
+  --font-large : 18px;
+  --font-medium : 14px;
+  --font-small : 12px;
+  --font-micro : 10px;
+}
+* {
+  padding : 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  color: var(--white-color);
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: var(--side-padding);
+}
+.header__logo {
+  font-size:var(--font-large);
+}
+.header__logo i {
+  color: var(--red-color);
+}
+.header__icons {
+  margin-right: var(--side-padding);
+}
+.player {
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: var(--black-color);
+}
+.player iframe {
+  width: 100%;
+  max-width: 1000px;
+}
+.info {
+  padding: var(--side-padding);
+}
+.metadata .hashtags {
+  display: flex;
+}
+.metadata .hashtags li {
+  padding: 5px;
+  color: var(--blue-color);
+}
+.metadata .titleAndbutton {
+  display: inline;
+}
+.metadata .titleAndbutton button {
+  margin: 4px;
+  text-align: center;
+}
+.metadata .views {
+  font-size: var(--font-micro);
+}
+.actions {
+  font-size: var(--font-large);
+}
+
